@@ -1,0 +1,32 @@
+.benefits {
+    strong {
+        font-weight: 600;
+    }
+    .fa-li {
+        font-size: 1.4rem;
+        color: var(--col-primary);
+    }
+    &__card {
+        padding: 1rem;
+        background-color: var(--col-grey);
+        border-radius: 0.5rem;
+        height: 100%;
+        text-align: center;
+        font-size: 0.889rem;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+        h4 {
+            font-size: 1.111rem;
+            font-weight: 600;
+        }
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 120px;
+            aspect-ratio: 10 /8;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

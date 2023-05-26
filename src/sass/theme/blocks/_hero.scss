@@ -1,0 +1,102 @@
+header.hero {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 3rem;
+
+    padding-top: 100px;
+
+    h1 {
+        font-size: 2rem;
+        font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+        font-weight: 300;
+        margin: 1rem 0;
+        min-height: 6.3rem;
+        span {
+            font-weight: 700;
+            color: var(--col-primary);
+        }
+
+    }
+
+    .form-container {
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        max-width: 500px;
+        .form-inner {
+            margin: 0 0.5rem;
+            background-color: var(--col-grey);
+            min-height: 4rem;
+            padding: 0 0.5rem;
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+    }
+    .hero_bg {
+        margin-top: -2rem;
+        width: 100%;
+        height: 160px;
+        @media (min-width:992px) {
+            height: 250px;
+        }
+        clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        // janky iOS fix for background image
+        @supports (-webkit-touch-callout: none) {
+            background-attachment: initial;
+        }
+    }
+
+    .bullets {
+        font-weight: 300;
+        font-size: 1.1rem;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+        ul {
+            display: contents;
+        }
+        li {
+            list-style-type: none;
+            padding-left: 1em;
+            text-indent: -1em;
+            &::before {
+                content: "\f00c";
+                font-family: 'Font Awesome 6 Free';
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 1;
+                padding-right: 5px;
+                color: var(--col-highlight);
+            }
+        }
+        span {
+            color: var(--col-primary);
+            font-weight: 700;
+        }
+    }
+}
+
+header.hero--short {
+    --h-top: 110px;
+    @media (min-width:992px) {
+        --h-top: 120px;
+    }
+
+    padding-top: var(--h-top);
+
+    h1 {
+        text-align: center;
+        min-height: unset;
+        span.smaller {
+            color: initial;
+            font-weight: 300;
+        }
+    }
+
+}

@@ -1,0 +1,40 @@
+.steps {
+    &__card {
+        height: 100%;
+        background-color: var(--col-grey);
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        padding: 1rem;
+        display: flex;
+        position: relative;
+        gap: 1rem;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 120px;
+    }
+    &__number_container {
+        position: absolute;
+        top: -0.5rem;
+        left: -0.5rem;
+    }
+    &__number {
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--col-dark);
+        color: var(--col-highlight);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 900;
+            line-height: 2.5rem;
+            margin-bottom: 0;
+        }
+    }
+}

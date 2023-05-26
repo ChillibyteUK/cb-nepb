@@ -1,0 +1,41 @@
+.cta_block {
+    text-align: center;
+
+    &--dark {
+        background-color: var(--col-dark);
+        color: white;
+        .cta__title span {
+            color: var(--col-highlight);
+        }
+    }
+    &--light {
+        background-color: var(--col-grey);
+        color: black;
+        .cta__title span {
+            color: var(--col-darkest);
+        }
+    }
+    .cta__title {
+        margin-bottom: 1rem;
+    }
+    .cta__intro {
+        margin: auto;
+        max-width: 84ch;
+    }
+    .form-inner {
+        background: var(--col-darkest);
+        max-width: 84ch;
+        margin: auto;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        .text-center {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 300;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}

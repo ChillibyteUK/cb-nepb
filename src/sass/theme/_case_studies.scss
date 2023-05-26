@@ -1,0 +1,113 @@
+/* I AM HERE */
+
+.caseStudies {
+    #filters {
+        background-color: #00497a;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.25rem;
+    }
+    .option-set {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .form-check {
+        * {
+            cursor: pointer;
+        }
+    }
+
+    .status {
+        font-size: 0.8rem;
+    }
+    .caseStudy_card {
+        margin-bottom: 0.75rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--col-primary);
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 1fr;
+        @media (min-width:768px) {
+            grid-template-columns: 1fr 3fr;
+        }
+        color: #000;
+        &__image {
+            // width: 200px;
+            img {
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 0.25rem;
+            }
+        }
+        &__content {
+            padding: 0.5rem 0.5rem 0 0.5rem;
+            flex: 1;
+        }
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    }
+    .article {
+        &-quote {
+            font-style: italic;
+        }
+        &-attrib {
+            text-align: right;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        &-highlights {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+            @media (min-width: 992px) {
+                grid-template-columns: repeat(3,1fr);
+            }
+            div {
+                background-color: var(--col-grey);
+                border-radius: 0.25rem;
+                padding: 0.5rem;
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                font-weight: bold;
+                font-size: 0.8rem;
+                color: var(--col-dark);
+            }
+        }
+    }
+
+    .quote-container {
+        background-color: var(--col-grey);
+        color: var(--col-darkest);
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+    }
+}
+
+.case_studies_excerpt {
+    .blog_card {
+        display: grid;
+        grid-template-columns: 1fr;
+        @media (min-width:992px) {
+            grid-template-columns: 1fr 2fr;
+        }
+        &__image {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            @media (min-width:992px) {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 1rem;
+            }
+        }
+        &__title {
+            font-weight: 600;
+        }
+    }
+}

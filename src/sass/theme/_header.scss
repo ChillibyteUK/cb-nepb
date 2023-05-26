@@ -1,0 +1,143 @@
+
+#wrapper-navbar {
+
+    .navbar-toggler i {
+        color: #fff;
+    }
+
+    .navbar {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        .collapsing {
+            transition: none;
+            display: none;
+        }
+
+        .nav-item {
+            .btn {
+                display: block;
+                color: black;
+            }
+            &.current_page_item  {
+                a {
+                    color: var(--col-highlight);
+                }
+            }
+        }
+
+        background-color: var(--col-primary);
+        a:not(.btn--accent) {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            &:hover {
+                color: var(--col-highlight);
+            }
+        }
+        
+        #navbar {
+            a {
+                padding-top: 0;
+            }
+            @media (max-width:767px) {
+                height: calc(100vh - var(--h-top));
+                .navbar-nav {
+                    height: 100%;
+                }
+                a {
+                    font-size: 1.2rem;
+                    padding: 1rem 0;
+                }
+                .dropdown-item {
+                    padding-left: 0.5rem;
+                }
+            }
+        }
+    }
+    .logo-container {
+        max-width: 180px;
+        margin-right: 1rem;
+    }
+    .logo {
+        background-image: url(../img/gaffsy-logo--wo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        aspect-ratio: 3 / 1;
+        height: 50px;
+        width: 150px;
+        max-width: 100%;
+        transition: all 0.2s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    @media (min-width:992px) {
+        .phone-container {
+            margin-top: -0.3rem;
+        }        
+        .cta-container {
+            margin-top: -0.5rem;
+        }
+    }
+
+.navPhone {
+    i {
+        font-size: 1.4rem;
+    }
+    div {
+        font-size: 0.776rem;
+        line-height: 1.1;
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+
+    .button-container {
+        flex-grow: 1;
+        justify-content: end;
+        display: flex;
+        align-items: flex-end;
+        margin-top: -1rem;
+    }
+
+    .nav-top__phone {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black !important;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 0.889rem;
+        i {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+            @media (min-width:992px) {
+                font-size: 1rem;
+                margin-right: 0.25rem;
+            }
+            line-height: 1;
+            color: var(--col-highlight);
+        }
+        span {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        transition: 0.2s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .dropdown-menu {
+        a {
+            color: var(--col-primary) !important;
+            &:active {
+                color: var(--col-highlight) !important;
+            }
+        }
+    }
+}

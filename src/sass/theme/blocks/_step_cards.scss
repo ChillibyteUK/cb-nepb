@@ -1,0 +1,73 @@
+.step_card.card {
+    height: 100%;
+    border-radius: 1rem;
+    padding: 3rem 2rem 2rem 2rem;
+    position: relative;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    .card__step {
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        width: 4rem;
+        height: 4rem;
+        background-color: var(--col-dark);
+        color: var(--col-highlight);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 3.5rem;
+            margin-bottom: 0;
+        }
+    }
+    .card__icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        img {
+            width: 160px;
+            aspect-ratio: 10 / 8;
+        }
+    }
+    .card__title {
+        text-align: center;
+        min-height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
+    .card__content {
+        text-align: center;
+    }
+}
+
+.step_repeater {
+    .card__step {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        background-color: var(--col-dark);
+        color: var(--col-highlight);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 3.5rem;
+            margin-bottom: 0;
+        }
+    }
+}
