@@ -129,7 +129,7 @@ do_action('wp_body_open');
                 </button>
             </div>
             <div class="d-none d-xl-flex phone-container">
-                <a href="<?=parse_phone(get_field('contact_phone','options'))?>" class="nav-top__phone">
+                <a href="tel:<?=parse_phone(get_field('contact_phone','options'))?>" class="nav-top__phone">
                     <div><i class="fas fa-phone-alt"></i></div>
                     <div><?=get_field('contact_phone','options')?></span></div>
                 </a>
