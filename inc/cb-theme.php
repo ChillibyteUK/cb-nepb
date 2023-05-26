@@ -56,23 +56,23 @@ function widgets_init()
 {
     register_sidebar(
         array(
-            'name'          => __('Footer Col 1', 'cb-gaffsy'),
+            'name'          => __('Footer Col 1', 'cb-nepb'),
             'id'            => 'footer-1',
-            'description'   => __('Footer Col 1', 'cb-gaffsy'),
+            'description'   => __('Footer Col 1', 'cb-nepb'),
             'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
             'after_widget'  => '</div>',
         )
     );
 
     register_nav_menus(array(
-        'primary_nav' => __('Primary Nav', 'cb-gaffsy'),
+        'primary_nav' => __('Primary Nav', 'cb-nepb'),
     ));
 
     register_nav_menus(array(
-        'footer_menu1' => __('Footer Menu 1', 'cb-gaffsy'),
+        'footer_menu1' => __('Footer Menu 1', 'cb-nepb'),
     ));
     register_nav_menus(array(
-        'footer_menu2' => __('Footer Menu 2', 'cb-gaffsy'),
+        'footer_menu2' => __('Footer Menu 2', 'cb-nepb'),
     ));
 
     unregister_sidebar('hero');
