@@ -90,7 +90,7 @@ wp_head();
             "@type": "Organization",
             "name": "Gaffsy",
             "url": "https://www.gaffsy.com/",
-            "logo": "https://www.gaffsy.com/wp-content/theme/cb-gaffsy/img/gaffsy-logo.jpg",
+            "logo": "https://www.gaffsy.com/wp-content/theme/cb-nepb/img/gaffsy-logo.jpg",
             "description": "Sell House Fast | Quick House Sale For Cash | Gaffsy",
             "address": {
                 "@type": "PostalAddress",

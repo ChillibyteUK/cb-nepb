@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-define('CB_THEME_DIR', WP_CONTENT_DIR . '/themes/cb-gaffsy');
+define('CB_THEME_DIR', WP_CONTENT_DIR . '/themes/cb-nepb');
 
 require_once CB_THEME_DIR . '/inc/cb-theme.php';
 
@@ -67,7 +67,7 @@ function cb_defer_scripts( $tag, $handle, $src ) {
  * Load the child theme's text domain
  */
 function add_child_theme_textdomain() {
-	load_child_theme_textdomain( 'cb-gaffsy', get_stylesheet_directory() . '/languages' );
+	load_child_theme_textdomain( 'cb-nepb', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 

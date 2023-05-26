@@ -3,12 +3,12 @@
 function cb_register_post_types() {
 
     $labels = [
-        "name" => __( "Case Studies", "cb-gaffsy" ),
-        "singular_name" => __( "Case Study", "cb-gaffsy" ),
+        "name" => __( "Case Studies", "cb-nepb" ),
+        "singular_name" => __( "Case Study", "cb-nepb" ),
     ];
 
     $args = [
-        "label" => __( "Case Studies", "cb-gaffsy" ),
+        "label" => __( "Case Studies", "cb-nepb" ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
