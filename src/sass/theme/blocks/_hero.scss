@@ -13,7 +13,7 @@ header.hero {
         min-height: 6.3rem;
         span {
             font-weight: 700;
-            color: var(--col-primary);
+            color: var(--col-highlight);
         }
 
     }
@@ -41,7 +41,6 @@ header.hero {
         @media (min-width:992px) {
             height: 250px;
         }
-        clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -76,7 +75,7 @@ header.hero {
             }
         }
         span {
-            color: var(--col-primary);
+            color: var(--col-highlight);
             font-weight: 700;
         }
     }

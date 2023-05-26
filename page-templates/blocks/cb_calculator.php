@@ -17,8 +17,8 @@ $classes = $block['className'] ?? null;
                     <div id="esPrice"></div>
                 </div>
                 <div class="col-md-6">
-                    <div id="gaffsyLogo">
-                        <img src="<?=get_stylesheet_directory_uri()?>/img/gaffsy-logo.svg" width=200 height=60 alt="Gaffsy">
+                    <div id="nepbLogo">
+                        <img src="<?=get_stylesheet_directory_uri()?>/img/nepb-logo.svg" width=200 height=60 alt="NE Property Buyers">
                         <span class="fa-stack" style="vertical-align:top;" type="button" data-bs-toggle="modal" data-bs-target="#calcDetail">
                             <i class="fa-regular fa-circle fa-stack-2x"></i>
                             <i class="fa-solid fa-info fa-stack-1x"></i>

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 :root {
-  --col-primary: #00A0DE;
-  --col-dark: #00487C;
-  --col-darkest: #0D0630;
-  --col-highlight: #53DD6C;
+  --col-primary: #002756;
+  --col-dark: #000d26;
+  --col-darkest: #000d26;
+  --col-highlight: #00994e;
   --col-grey: #FFF0F0;
   --h-top: 76px;
 }
@@ -179,11 +179,11 @@ sup {
 }
 
 a {
-  color: #00A0DE;
+  color: #002756;
   text-decoration: underline;
 }
 a:hover {
-  color: #0080b2;
+  color: #001f45;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -454,16 +454,16 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #00A0DE;
-  --bs-secondary: #00487C;
+  --bs-primary: #002756;
+  --bs-secondary: #000d26;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 0, 160, 222;
-  --bs-secondary-rgb: 0, 72, 124;
+  --bs-primary-rgb: 0, 39, 86;
+  --bs-secondary-rgb: 0, 13, 38;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -554,27 +554,27 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #ccecf8;
-  --bs-table-striped-bg: #c2e0ec;
+  --bs-table-bg: #ccd4dd;
+  --bs-table-striped-bg: #c2c9d2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #b8d4df;
+  --bs-table-active-bg: #b8bfc7;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bddae5;
+  --bs-table-hover-bg: #bdc4cc;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #b8d4df;
+  border-color: #b8bfc7;
 }
 
 .table-secondary {
-  --bs-table-bg: #ccdae5;
-  --bs-table-striped-bg: #c2cfda;
+  --bs-table-bg: #cccfd4;
+  --bs-table-striped-bg: #c2c5c9;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #b8c4ce;
+  --bs-table-active-bg: #b8babf;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bdcad4;
+  --bs-table-hover-bg: #bdbfc4;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #b8c4ce;
+  border-color: #b8babf;
 }
 
 .table-success {
@@ -955,22 +955,22 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #00A0DE;
+  color: #002756;
 }
 
 .has-primary-background-color {
-  background-color: #00A0DE;
-  border-color: #00A0DE;
+  background-color: #002756;
+  border-color: #002756;
 }
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #00487C;
+  color: #000d26;
 }
 
 .has-secondary-background-color {
-  background-color: #00487C;
-  border-color: #00487C;
+  background-color: #000d26;
+  border-color: #000d26;
 }
 
 .has-success-color,

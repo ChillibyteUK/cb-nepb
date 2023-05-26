@@ -14,7 +14,7 @@ if ($_POST['postcodehome1'] ?? null) {
 if(isset($_POST['button1'])) { 
 	//$_SESSION['postcode'] = 'test';
 	$_SESSION['postcode'] = $_POST['postcodehome1'];
-    $url = "http://gaffsy.com/get-offer-postcode-page/";
+    $url = "https:/www.nepropertybuyers.co.uk/get-offer-postcode-page/";
     echo '<script type="text/javascript">';
     echo 'window.location.href="'.$url.'";';
     echo '</script>';	
