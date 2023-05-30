@@ -23348,7 +23348,7 @@ header.hero--short h1 span.smaller, header.hero--short .h1 span.smaller {
   color: black;
 }
 .cta_block--light .cta__title span {
-  color: var(--col-darkest);
+  color: var(--col-primary);
 }
 .cta_block .cta__title {
   margin-bottom: 1rem;
@@ -23358,7 +23358,7 @@ header.hero--short h1 span.smaller, header.hero--short .h1 span.smaller {
   max-width: 84ch;
 }
 .cta_block .form-inner {
-  background: var(--col-darkest);
+  background: var(--col-secondary);
   max-width: 84ch;
   margin: auto;
   padding: 0.5rem;

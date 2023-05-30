@@ -12,7 +12,7 @@
         background-color: var(--col-grey);
         color: black;
         .cta__title span {
-            color: var(--col-darkest);
+            color: var(--col-primary);
         }
     }
     .cta__title {
@@ -23,7 +23,7 @@
         max-width: 84ch;
     }
     .form-inner {
-        background: var(--col-darkest);
+        background: var(--col-secondary);
         max-width: 84ch;
         margin: auto;
         padding: 0.5rem;
