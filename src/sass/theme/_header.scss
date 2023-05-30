@@ -26,7 +26,7 @@
 
         background-color: white;
         a:not(.btn--accent) {
-            color: var(--col-primary);
+            color: var(--col-dark);
             text-decoration: none;
             font-size: 1rem;
             font-weight: 500;
@@ -64,10 +64,10 @@
         background-repeat: no-repeat;
         background-size: contain;
         display: inline-block;
-        aspect-ratio: 3 / 1;
-        height: 50px;
-        width: 150px;
+        height: 66px;
+        width: 175px;
         max-width: 100%;
+        margin-right: 1rem;
     }
 
     @media (min-width:992px) {
