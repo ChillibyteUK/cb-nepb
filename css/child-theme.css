@@ -22443,6 +22443,7 @@ strong, b {
 
 span:not([class]) {
   color: var(--col-highlight);
+  font-weight: 700;
 }
 
 .text--white {
