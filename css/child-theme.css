@@ -22441,6 +22441,10 @@ strong, b {
   font-weight: 700;
 }
 
+span:not([class]) {
+  color: var(--col-highlight);
+}
+
 .text--white {
   color: #fff;
 }
