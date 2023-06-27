@@ -23015,6 +23015,10 @@ body .gform_wrapper .gform_footer button:hover {
   padding-left: 2rem;
 }
 
+.contact .gform_wrapper form {
+  padding-left: 0;
+}
+
 .gform_fields {
   list-style-type: none;
   margin-right: -15px;
