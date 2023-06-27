@@ -58,26 +58,6 @@
             "append": ""
         },
         {
-            "key": "field_63da9b0eb86eb",
-            "label": "Portal ID",
-            "name": "portal_id",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_63d90d7de9fee",
             "label": "Form ID",
             "name": "form_id",
@@ -173,5 +153,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1682342333
+    "modified": 1687865040
 }

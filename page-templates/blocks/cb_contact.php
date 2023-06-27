@@ -3,23 +3,7 @@
         <div class="row g-4">
             <div class="col-lg-6">
                 <h2><?=get_field('left_title')?></h2>
-                <?php
-                if (!get_field('portal_id')) {
-                    echo 'FORM GOES HERE';
-                }
-                else {
-                    ?>
-                <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2.js?pre=1"></script>
-                <script>
-                hbspt.forms.create({
-                    region: "eu1",
-                    portalId: "<?=get_field('portal_id')?>",
-                    formId: "<?=get_field('form_id')?>"
-                });
-                </script>
-                    <?php
-                }
-                ?>
+                <?=do_shortcode('[gravityforms id="' . get_field('form_id') . '" title="false"]')?>
             </div>
             <div class="col-lg-6">
                 <h2><?=get_field('right_title')?></h2>
