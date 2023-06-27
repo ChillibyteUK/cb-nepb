@@ -23,3 +23,18 @@ $btn = random_str(4);
         </div>
     </div>
 </section>
+<?php
+add_action('wp_footer', function () use ($btn) {
+    ?>
+<script>
+    document.getElementById('btn_<?=$btn?>').addEventListener('click',
+        function() {
+            var postCode = document.getElementById('postcode_<?=$btn?>')
+                .value;
+            var loca = '/get-offer/?post_code=' + postCode;
+            window.location.href = loca;
+        });
+</script>
+<?php
+});
+?>
