@@ -3,10 +3,11 @@
     font-size: 0.889rem;
 }
 
-// .gform_wrapper form {
-//     max-width: 768px;
-//     margin: auto;
-// }
+.gform_wrapper form {
+    width: min(600px,90vw);
+    margin-inline: auto;
+    padding-left: 2rem;
+}
 .gform_fields {
     list-style-type: none;
     margin-right: -15px;
@@ -14,11 +15,11 @@
     padding: 0;
 }
 
-.gfield {
-    margin-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
+// .gfield {
+//     margin-bottom: 15px;
+    // padding-right: 15px;
+    // padding-left: 15px;
+// }
 
 .gform_wrapper.gravity-theme input[type=text],
 .gform_wrapper.gravity-theme input[type=email],
@@ -76,7 +77,11 @@
 
 body .gform_wrapper .gform_footer button {
     @extend .btn;
-    @extend .btn-primary;
+    @extend .btn--accent;
+    margin-inline: auto;
+    span {
+        color: white;
+    }
 }
 
 .gfield_checkbox,

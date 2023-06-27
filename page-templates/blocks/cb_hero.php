@@ -1,22 +1,7 @@
 <?php
 $img = get_the_post_thumbnail_url(get_the_ID(),'full');
 
-if ($_POST['postcodehome1'] ?? null) {
-    ?>
-    <div style="display:none;">
-        <?php echo $_POST['postcodehome1']; ?>
-    </div>
-    <?php
-}
-    
-if(isset($_POST['button1'])) { 
-    //$_SESSION['postcode'] = 'test';
-    $_SESSION['postcode'] = $_POST['postcodehome1'];
-    $url = "https:/www.nepropertybuyers.co.uk/get-offer-postcode-page/";
-    echo '<script type="text/javascript">';
-    echo 'window.location.href="'.$url.'";';
-    echo '</script>';	
-}
+$btn = random_str(4);
 
 ?>
 <link rel="preload" as="image" href="<?=$img?>">
@@ -24,12 +9,10 @@ if(isset($_POST['button1'])) {
     <div class="pre-bit text-center">
         <h1><?=get_field('title')?></h1>
         <div class="form-container">
-            <form method="POST" action="">
-                <div class="form-inner px-2 py-2 py-sm-0 row">
-                    <div class="col-sm-8 px-1 mb-1 mb-sm-0"><input type="text" name="postcodehome1" id="postcodehome1" class="form-control w-100" placeholder="Enter your Post Code"></div>
-                    <div class="col-sm-4 px-1"><button type="submit" name="button1" class="btn btn--accent d-block w-100">Get Offer</button></div>
-                </div>
-            </form>
+            <div class="form-inner px-2 py-2 py-sm-0 row">
+                <div class="col-sm-8 px-1 mb-1 mb-sm-0"><input type="text" name="postcode" id="postcode_<?=$btn?>" class="form-control w-100" placeholder="Enter your Post Code"></div>
+                <div class="col-sm-4 px-1"><button id="btn_<?=$btn?>" class="btn btn--accent d-block w-100">Get Offer</button></div>
+            </div>
         </div>
     </div>
     <div class="hero_bg" style="background-image: url(<?=$img?>)"></div>
@@ -49,3 +32,18 @@ if(isset($_POST['button1'])) {
     }
     ?>
 </header>
+<?php
+add_action('wp_footer', function () use ($btn) {
+    ?>
+<script>
+    document.getElementById('btn_<?=$btn?>').addEventListener('click',
+        function() {
+            var postCode = document.getElementById('postcode_<?=$btn?>')
+                .value;
+            var loca = '/get-offer/?post_code=' + postCode;
+            window.location.href = loca;
+        });
+</script>
+<?php
+});
+?>
