@@ -67,7 +67,8 @@ if ($social) {
                         </div>
                     </div>
                     <div class="col-12 mt-lg-4">
-                        <p>Registered with the Information Commissioner's Office under ref: ZAXXXXXX</p>
+                        <p>Registered with the Information Commissioner's Office under ref: ZA759148<br>
+                        Subscribed to the Property Ombudsman Scheme under ref: T00667.</p>
                         <div class="logos d-flex justify-content-start gap-4">
                             <img src="<?=get_stylesheet_directory_uri()?>/img/logo-napb.png "
                                 alt="NAPB" width=63 height=63>
@@ -84,7 +85,7 @@ if ($social) {
     <div class="container py-2">
         <div class="d-flex flex-wrap justify-content-between">
             <div class="col-md-8 text-center text-md-start">
-                &copy; <?=date('Y')?> North East Property Buyers. Registered in England no 1234567
+                &copy; <?=date('Y')?> North East Property Investment Limited. NE Property Buyers is a trading name of North East Property Investment Limited. Registered in England and Wales no 11769242.
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-end flex-wrap gap-3">
                 <a href="/privacy-policy/">Privacy & Cookies</a> |
