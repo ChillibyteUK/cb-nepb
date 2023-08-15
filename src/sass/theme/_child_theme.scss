@@ -23,9 +23,14 @@ a.anchor {
     visibility: hidden;
 }
 
-@media (min-width:768px) {
+@media (min-width:576px) {
     .cols-lg-4 {
         columns: 2;
+    }
+}
+@media (min-width:576px) {
+    .cols-lg-4 {
+        columns: 3;
     }
 }
 

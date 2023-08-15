@@ -23853,10 +23853,16 @@ a.anchor {
   visibility: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .cols-lg-4 {
     -moz-columns: 2;
     columns: 2;
+  }
+}
+@media (min-width: 576px) {
+  .cols-lg-4 {
+    -moz-columns: 3;
+    columns: 3;
   }
 }
 @media (min-width: 992px) {
