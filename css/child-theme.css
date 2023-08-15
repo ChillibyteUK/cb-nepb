@@ -23859,7 +23859,7 @@ a.anchor {
     columns: 2;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .cols-lg-4 {
     -moz-columns: 3;
     columns: 3;
