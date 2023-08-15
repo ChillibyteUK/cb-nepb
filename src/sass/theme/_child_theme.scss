@@ -23,12 +23,21 @@ a.anchor {
     visibility: hidden;
 }
 
+@media (min-width:768px) {
+    .cols-lg-4 {
+        columns: 2;
+    }
+}
+
 @media (min-width:992px) {
     .cols-lg-2 {
         columns: 2;
     }
     .cols-lg-3 {
         columns: 3;
+    }
+    .cols-lg-4 {
+        columns: 4;
     }
 }
 
