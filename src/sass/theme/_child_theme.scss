@@ -46,6 +46,10 @@ a.anchor {
     }
 }
 
+.fa-li {
+    color: var(--col-highlight);
+}
+
 .mw-md-75 {
     @media (min-width:992px) {
         max-width: 75%;
